@@ -1,0 +1,25 @@
+coins will be created individually not in a class.
+points are added up based on how many coins the other player has left on the board.
+for example, if the white player scores all his coins and the opponent has 3 coins left, 
+the white player gets three points.
+also, if the white player got the red coin it would be an extra 5 points.
+if someone puts a red coin in, it has to be followed up by another coin.
+if you fail to follow up your red coin shot, the red coin will return to the center.
+first to 25 points wins.
+if you put a coin in, you get to go again.
+the reset function just sets up the coins on the board again. 
+so, the points remain the same when the reset fucntion is activated.
+the restart fucntion completely restarts the entire game.
+so, when the restart fuction is activated, the points and gamestate go to zero as well.
+the turns are determined by the position of a invisible sprite called the turnmarker.
+the left and right arrows controls the angle and the direction that the striker will go.
+the position of the mouse will determine where you will position the striker.
+the up and down arrows determine how much power you want to give to the striker.
+once you have set the angle, position and the power of your strike, press space to release
+The harder you hit, the less accuracy you will have.
+coinTouch tells the code if the coin fell in or not.
+coinTouch is false by default so the striker moves between the players every turn if it is not true.
+if coinTouch is true, the striker does not move so that the player gets to go again for making the shot.
+there are 4 functions to simulate friction.
+these are for slowing down the momentum of each of the 4 directions the coins move in.
+the MoveStrikerEachTurn function doesnt actually move the striker. It moves the tunrmarker
